@@ -6,11 +6,11 @@
 /*   By: ahmad <ahmad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 06:22:24 by ahmad             #+#    #+#             */
-/*   Updated: 2026/08/12 06:44:04 by ahmad            ###   ########.fr       */
+/*   Updated: 2026/08/16 02:33:24 by ahmad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 
-//#include <stdio.h>
 void	ft_rev_int_tab(int *tab, int size)
 {
 	int		i;
@@ -25,20 +25,17 @@ void	ft_rev_int_tab(int *tab, int size)
 		i++;
 	}
 }
-/*
-int		main(void)
+
+int	main(void)
 {
 	int		i;
-	int  v[6] ={1,3,8,2,75,0};
-
+	int		v[6] = {1, 2, 3, 4, 5, 6};
 	i = 0;
-
-	ft_rev_int_tab(v,6);
+	ft_rev_int_tab(v, 6);
 	while (i < 6)
 	{
-	printf("%d" , v[i]);
-	i++;
+		printf("%d", v[i]);
+		i++;
 	}
-	return 0;
+	return (0);
 }
-*/

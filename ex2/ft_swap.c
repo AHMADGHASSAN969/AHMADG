@@ -6,7 +6,7 @@
 /*   By: ahmad <ahmad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 05:41:06 by ahmad             #+#    #+#             */
-/*   Updated: 2026/08/12 05:53:45 by ahmad            ###   ########.fr       */
+/*   Updated: 2026/08/16 01:56:42 by ahmad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,15 @@ void	ft_swap(int *a, int *b)
 	*b = temp;
 }
 /*
-int		main(void)
+int	main(void)
 {
 	int		c;
 	int		d;
-	int		*t1;
-	int		*t2;
 
-	c = 9;
-	d = 2;
-	t1 = &c;
-	t2 = &d;
-	ft_swap(t1,t2);
-	printf("%d%d\n", *t1, *t2);
-	return 0;
+	c = 10;
+	d = 20;
+	ft_swap(&c, &d);
+	printf("%d%d\n", c, d);
+	return (0);
 }
 */

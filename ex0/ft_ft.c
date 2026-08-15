@@ -6,23 +6,21 @@
 /*   By: ahmad <ahmad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 03:58:47 by ahmad             #+#    #+#             */
-/*   Updated: 2026/08/12 04:26:15 by ahmad            ###   ########.fr       */
+/*   Updated: 2026/08/16 00:59:59 by ahmad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include <stdio.h>
 
 void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
-/*
-int    main(void)
-{
-    int    a;
-    int    *n;
 
-    n = &a;
-    ft_ft(n);
-    printf("%d\n" , *n);
-}*/
+int	main(void)
+{
+	int		a;
+
+	ft_ft(&a);
+	printf("%d\n", a);
+}

@@ -1,37 +1,53 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahmad <ahmad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/12 06:08:22 by ahmad             #+#    #+#             */
-/*   Updated: 2026/08/16 01:59:24 by ahmad            ###   ########.fr       */
+/*   Created: 2026/08/16 02:34:31 by ahmad             #+#    #+#             */
+/*   Updated: 2026/08/16 02:58:09 by ahmad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-void	ft_ultimate_div_mod(int *a, int *b)
+void	ft_sort_int_tab(int *tab, int size)
 {
-	int		div;
-	int		mod;
+	int		i;
+	int		j;
+	int		temp;
 
-	div = *a / *b;
-	mod = *a % *b;
-	*a = div;
-	*b = mod;
+	i = 0;
+	while (i < size - 1)
+	{
+		j = i + 1;
+		while (j < size)
+		{
+			if (tab[i] > tab[j])
+			{
+				temp = tab[i];
+				tab[i] = tab[j];
+				tab[j] = temp;
+			}
+			j++;
+		}
+		i++;
+	}
 }
 /*
 int		main(void)
 {
-	int		c;
-	int		d;
-	
-	c = 20;
-	d = 10;
-	ft_ultimate_div_mod(&c, &d);
-	printf("%d%d\n", c ,d);
-	return 0;
+	int		i;
+	int		v[4] = {5, 10, 9, 0};
+
+	i = 0;
+	ft_sort_int_tab(v, 4);
+	while (i < 4)
+	{
+		printf("%d\n", v[i]);
+		i++;
+	}
+	return (0);
 }
 */
